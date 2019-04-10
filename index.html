@@ -16,67 +16,65 @@
   <body>
       <script>
           var question = 0;
-var questions = ["1 x 1","1 x 2","1 x 3"];
-var answers = ["1","2","3"];
-var score = 0;
-function questionnum(el){
-    switch(el){
-        case "0":
-            question = 0;
-            break;
-        case "1":
-            question = 1;
-            break;
-        case "2":
-            question = 2;
-            break;
-        case "3":
-            question = 3;
-            break;
-        case "4":
-            question = 4;
-            break;
-        case "5":
-            question = 5;
-            break;
-        case "6":
-            question = 6;
-            break;
-        case "7":
-            question = 7;
-            break;
-        case "8":
-            question = 8;
-            break;
-        case "9":
-            question = 9;
-            break;
-        case "10":
-            question = 10;
-            break;
-        case "11":
-            question = 11;
-            break;
-        case "12":
-            question = 12;
-            break;
-        case "13":
-            question = 13;
-            break;
-        case "14":
-            question = 14;
-            break;
-        break;
-    }
-}
-function qprint(el){
-    $(el).innerHTML = questions[question];
-}
-function ansprint(el){
-     $(el).innerHTML = answers[question];
-}
-    
-}
+          var questions = ["1 x 1","1 x 2","1 x 3","1 x 4","1 x 5","1 x 6","1 x 7","1 x 8","1 x 9","1 x 10","1 x 11","1 x 12","1 x 13","1 x 14","1 x 15"];
+          var answers = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"];
+          var score = 0;
+          function questionnum(el){
+            switch(el){
+                case "0":
+                    question = 0;
+                    break;
+                case "1":
+                    question = 1;
+                    break;
+                case "2":
+                    question = 2;
+                    break;
+                case "3":
+                    question = 3;
+                    break;
+                case "4":
+                    question = 4;
+                    break;
+                case "5":
+                    question = 5;
+                    break;
+                case "6":
+                    question = 6;
+                    break;
+                case "7":
+                    question = 7;
+                    break;
+                case "8":
+                    question = 8;
+                    break;
+                case "9":
+                    question = 9;
+                    break;
+                case "10":
+                    question = 10;
+                    break;
+                case "11":
+                    question = 11;
+                    break;
+                case "12":
+                    question = 12;
+                    break;
+                case "13":
+                    question = 13;
+                    break;
+                case "14":
+                    question = 14;
+                    break;
+                break;
+                }
+          }
+          function qprint(el){
+            $(el).innerHTML = questions[question];
+          }
+          function ansprint(el){
+            $(el).innerHTML = answers[question];
+          }
       </script>
     <div class="jumbotron">
             <h1>Jeopardy!</h1>
@@ -86,31 +84,31 @@ function ansprint(el){
             <div class="col">
                 <div class="btn-group-vertical">
                 <button type="button" class="btn" active id="math">Math</button>
-                    <button type="button" class="btn btn-primary" id="0" data-toggle="modal" data-target="#myModal" onClick="questionnum(this.id)">100</button>
-                <button type="button" class="btn btn-primary"  id="1" data-toggle="modal" data-target="#myModal" >200</button>
-                <button type="button" class="btn btn-primary" value=true id="2" data-toggle="modal" data-target="#myModal" >300</button>
-                <button type="button" class="btn btn-primary" active id="3" data-toggle="modal" data-target="#myModal" >400</button>
-                <button type="button" class="btn btn-primary" active id="4" data-toggle="modal" data-target="#myModal" >500</button>
+                <button type="button" class="btn btn-primary" id="0" data-toggle="modal" data-target="#myModal" onClick="questionnum(this.id)">100</button>
+                <button type="button" class="btn btn-primary" id="1" data-toggle="modal" data-target="#myModal" onClick="questionnum(this.id)">200</button>
+                <button type="button" class="btn btn-primary" id="2" data-toggle="modal" data-target="#myModal" onClick="questionnum(this.id)">300</button>
+                <button type="button" class="btn btn-primary" id="3" data-toggle="modal" data-target="#myModal" onClick="questionnum(this.id)">400</button>
+                <button type="button" class="btn btn-primary" id="4" data-toggle="modal" data-target="#myModal" onClick="questionnum(this.id)">500</button>
                 </div>
             </div>
             <div class="col">
                 <div class="btn-group-vertical">
-                <button type="button" class="btn" active id="">2</button>
-                <button type="button" class="btn btn-primary" active id="5">100</button>
-                <button type="button" class="btn btn-primary" active id="6">200</button>
-                <button type="button" class="btn btn-primary" active id="7">300</button>
-                <button type="button" class="btn btn-primary" active id="8">400</button>
-                <button type="button" class="btn btn-primary" active id="9">500</button>
+                <button type="button" class="btn" active id="math2">Math 2</button>
+                <button type="button" class="btn btn-primary" id="5" onClick="questionnum(this.id)">100</button>
+                <button type="button" class="btn btn-primary" id="6" onClick="questionnum(this.id)">200</button>
+                <button type="button" class="btn btn-primary" id="7" onClick="questionnum(this.id)">300</button>
+                <button type="button" class="btn btn-primary" id="8" onClick="questionnum(this.id)">400</button>
+                <button type="button" class="btn btn-primary" id="9" onClick="questionnum(this.id)">500</button>
                 </div>
             </div>    
             <div class="col">
                 <div class="btn-group-vertical">
-                <button type="button" class="btn active" id="">3</button>
-                <button type="button" class="btn btn-primary" active id="10">100</button>
-                <button type="button" class="btn btn-primary" active id="11">200</button>
-                <button type="button" class="btn btn-primary" active id="12">300</button>
-                <button type="button" class="btn btn-primary" active id="13">400</button>
-                <button type="button" class="btn btn-primary" active id="14">500</button>
+                <button type="button" class="btn active" id="math2">Math 3</button>
+                <button type="button" class="btn btn-primary" id="10" onClick="questionnum(this.id)">100</button>
+                <button type="button" class="btn btn-primary" id="11" onClick="questionnum(this.id)">200</button>
+                <button type="button" class="btn btn-primary" id="12" onClick="questionnum(this.id)">300</button>
+                <button type="button" class="btn btn-primary" id="13" onClick="questionnum(this.id)">400</button>
+                <button type="button" class="btn btn-primary" id="14" onClick="questionnum(this.id)">500</button>
                 </div>
             </div>
             
@@ -121,13 +119,13 @@ function ansprint(el){
             <div class="modal-content">
                 <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title" load = call qprint(this.id)></h4>
+                <h4 class="modal-title" load = qprint(this.id)></h4>
                 </div>
                 <div class="modal-body">
-                <button type="button" class="btn btn-success active">Answer</button>
+                <button type="button" class="btn btn-success">Answer</button>
                     <p id="answer" load = ansprint(this.id)></p>
-                    <button id="right" type="button" class="btn btn-primary" active onClick="right(this.id)">Right</button>
-                    <button id="wrong" type="button" class="btn btn-primary" active onClick="wrong(this.id)">Wrong</button>
+                    <button id="right" type="button" class="btn btn-primary" onClick= right(this.id) >Right</button>
+                    <button id="wrong" type="button" class="btn btn-primary" onClick= wrong(this.id)>Wrong</button>
                 </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
